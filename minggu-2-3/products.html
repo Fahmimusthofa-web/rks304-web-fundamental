@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Products - TokoKu Admin</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen flex flex-col bg-stone-100 text-stone-800">
+
+  <!-- HEADER -->
+  <header class="bg-teal-900 text-white px-6 py-4 flex items-center justify-between shadow">
+    <h1 class="text-xl font-bold tracking-tight">TokoKu Admin</h1>
+    <span class="text-sm text-teal-200">Halo, Admin</span>
+  </header>
+
+  <div class="flex flex-1 flex-col md:flex-row">
+
+    <!-- NAVIGASI -->
+    <nav class="bg-teal-800 text-teal-50 md:w-56 p-4 flex md:flex-col gap-1">
+      <a href="dashboard.html" class="block rounded px-3 py-2 hover:bg-teal-700">Dashboard</a>
+      <a href="products.html" class="block rounded px-3 py-2 bg-teal-950 font-semibold">Products</a>
+      <a href="users.html" class="block rounded px-3 py-2 hover:bg-teal-700">Users</a>
+      <a href="setting.html" class="block rounded px-3 py-2 hover:bg-teal-700">Setting</a>
+      <a href="index.html" class="block rounded px-3 py-2 mt-auto bg-red-600 hover:bg-red-700 text-center">Logout</a>
+    </nav>
+
+    <!-- KONTEN UTAMA -->
+    <main class="flex-1 p-6">
+      <!-- KONTEN -->
+      <div class="flex items-center justify-between mb-5">
+        <h2 class="text-2xl font-bold">Manajemen Produk</h2>
+        <a href="add-produk.html" class="bg-teal-800 hover:bg-teal-700 text-white font-semibold rounded px-4 py-2">Add Product</a>
+      </div>
+      <div class="bg-white rounded-lg shadow overflow-x-auto">
+        <table class="w-full text-left">
+          <thead class="bg-stone-200 text-sm">
+            <tr><th class="px-4 py-3">No</th><th class="px-4 py-3">Name</th><th class="px-4 py-3">Stock</th><th class="px-4 py-3">Action</th></tr>
+          </thead>
+          <tbody>
+          <tr class="border-t border-stone-200">
+            <td class="px-4 py-3">1</td>
+            <td class="px-4 py-3">Kaos Polos Hitam</td>
+            <td class="px-4 py-3">120</td>
+            <td class="px-4 py-3 space-x-2">
+              <a href="edit-produk.html" class="inline-block bg-amber-500 hover:bg-amber-600 text-white text-sm rounded px-3 py-1">Edit</a>
+              <button type="button" onclick="confirm('Hapus produk ini?')" class="bg-red-600 hover:bg-red-700 text-white text-sm rounded px-3 py-1">Delete</button>
+            </td>
+          </tr>
+          <tr class="border-t border-stone-200">
+            <td class="px-4 py-3">2</td>
+            <td class="px-4 py-3">Celana Chino Krem</td>
+            <td class="px-4 py-3">45</td>
+            <td class="px-4 py-3 space-x-2">
+              <a href="edit-produk.html" class="inline-block bg-amber-500 hover:bg-amber-600 text-white text-sm rounded px-3 py-1">Edit</a>
+              <button type="button" onclick="confirm('Hapus produk ini?')" class="bg-red-600 hover:bg-red-700 text-white text-sm rounded px-3 py-1">Delete</button>
+            </td>
+          </tr>
+          <tr class="border-t border-stone-200">
+            <td class="px-4 py-3">3</td>
+            <td class="px-4 py-3">Sepatu Sneakers Putih</td>
+            <td class="px-4 py-3">18</td>
+            <td class="px-4 py-3 space-x-2">
+              <a href="edit-produk.html" class="inline-block bg-amber-500 hover:bg-amber-600 text-white text-sm rounded px-3 py-1">Edit</a>
+              <button type="button" onclick="confirm('Hapus produk ini?')" class="bg-red-600 hover:bg-red-700 text-white text-sm rounded px-3 py-1">Delete</button>
+            </td>
+          </tr>
+          <tr class="border-t border-stone-200">
+            <td class="px-4 py-3">4</td>
+            <td class="px-4 py-3">Tas Ransel Kanvas</td>
+            <td class="px-4 py-3">7</td>
+            <td class="px-4 py-3 space-x-2">
+              <a href="edit-produk.html" class="inline-block bg-amber-500 hover:bg-amber-600 text-white text-sm rounded px-3 py-1">Edit</a>
+              <button type="button" onclick="confirm('Hapus produk ini?')" class="bg-red-600 hover:bg-red-700 text-white text-sm rounded px-3 py-1">Delete</button>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- /KONTEN -->
+    </main>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="bg-stone-200 text-center text-sm text-stone-600 py-3">
+    &copy; 2026 TokoKu Admin. Dibuat dengan TailwindCSS.
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard - TokoKu Admin</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen flex flex-col bg-stone-100 text-stone-800">
+
+  <!-- HEADER -->
+  <header class="bg-teal-900 text-white px-6 py-4 flex items-center justify-between shadow">
+    <h1 class="text-xl font-bold tracking-tight">TokoKu Admin</h1>
+    <span class="text-sm text-teal-200">Halo, Admin</span>
+  </header>
+
+  <div class="flex flex-1 flex-col md:flex-row">
+
+    <!-- NAVIGASI -->
+    <nav class="bg-teal-800 text-teal-50 md:w-56 p-4 flex md:flex-col gap-1">
+      <a href="dashboard.html" class="block rounded px-3 py-2 bg-teal-950 font-semibold">Dashboard</a>
+      <a href="products.html" class="block rounded px-3 py-2 hover:bg-teal-700">Products</a>
+      <a href="users.html" class="block rounded px-3 py-2 hover:bg-teal-700">Users</a>
+      <a href="setting.html" class="block rounded px-3 py-2 hover:bg-teal-700">Setting</a>
+      <a href="index.html" class="block rounded px-3 py-2 mt-auto bg-red-600 hover:bg-red-700 text-center">Logout</a>
+    </nav>
+
+    <!-- KONTEN UTAMA -->
+    <main class="flex-1 p-6">
+      <!-- KONTEN -->
+      <h2 class="text-2xl font-bold mb-5">Dashboard</h2>
+      <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+        <div class="bg-white rounded-lg shadow p-5">
+          <p class="text-sm text-stone-500">Total Penjualan</p>
+          <p class="text-3xl font-bold mt-1">Rp 48.250.000</p>
+          <p class="text-sm text-teal-700 mt-2">+12% dari bulan lalu</p>
+        </div>
+        <div class="bg-white rounded-lg shadow p-5">
+          <p class="text-sm text-stone-500">Pesanan Baru</p>
+          <p class="text-3xl font-bold mt-1">326</p>
+          <p class="text-sm text-teal-700 mt-2">28 menunggu pembayaran</p>
+        </div>
+        <div class="bg-white rounded-lg shadow p-5">
+          <p class="text-sm text-stone-500">Pelanggan Aktif</p>
+          <p class="text-3xl font-bold mt-1">1.482</p>
+          <p class="text-sm text-teal-700 mt-2">+54 minggu ini</p>
+        </div>
+        <div class="bg-white rounded-lg shadow p-5">
+          <p class="text-sm text-stone-500">Stok Menipis</p>
+          <p class="text-3xl font-bold mt-1">9</p>
+          <p class="text-sm text-teal-700 mt-2">produk perlu restock</p>
+        </div>
+      </div>
+      <!-- /KONTEN -->
+    </main>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="bg-stone-200 text-center text-sm text-stone-600 py-3">
+    &copy; 2026 TokoKu Admin. Dibuat dengan TailwindCSS.
+  </footer>
+
+</body>
+</html>

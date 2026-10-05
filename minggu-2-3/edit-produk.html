@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Edit Produk - TokoKu Admin</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen flex flex-col bg-stone-100 text-stone-800">
+
+  <!-- HEADER -->
+  <header class="bg-teal-900 text-white px-6 py-4 flex items-center justify-between shadow">
+    <h1 class="text-xl font-bold tracking-tight">TokoKu Admin</h1>
+    <span class="text-sm text-teal-200">Halo, Admin</span>
+  </header>
+
+  <div class="flex flex-1 flex-col md:flex-row">
+
+    <!-- NAVIGASI -->
+    <nav class="bg-teal-800 text-teal-50 md:w-56 p-4 flex md:flex-col gap-1">
+      <a href="dashboard.html" class="block rounded px-3 py-2 hover:bg-teal-700">Dashboard</a>
+      <a href="products.html" class="block rounded px-3 py-2 bg-teal-950 font-semibold">Products</a>
+      <a href="users.html" class="block rounded px-3 py-2 hover:bg-teal-700">Users</a>
+      <a href="setting.html" class="block rounded px-3 py-2 hover:bg-teal-700">Setting</a>
+      <a href="index.html" class="block rounded px-3 py-2 mt-auto bg-red-600 hover:bg-red-700 text-center">Logout</a>
+    </nav>
+
+    <!-- KONTEN UTAMA -->
+    <main class="flex-1 p-6">
+      <!-- KONTEN -->
+      <h2 class="text-2xl font-bold mb-5">Edit Produk</h2>
+      <form action="products.html" class="bg-white rounded-lg shadow p-6 max-w-lg space-y-4">
+        <div>
+          <label for="name" class="block text-sm font-medium mb-1">Name</label>
+          <input id="name" name="name" type="text" required value="Kaos Polos Hitam"
+                 class="w-full border border-stone-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-teal-600">
+        </div>
+        <div>
+          <label for="stock" class="block text-sm font-medium mb-1">Stock</label>
+          <input id="stock" name="stock" type="number" min="0" required value="120"
+                 class="w-full border border-stone-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-teal-600">
+        </div>
+        <div>
+          <label for="description" class="block text-sm font-medium mb-1">Description</label>
+          <input id="description" name="description" type="text" value="Kaos katun combed 30s"
+                 class="w-full border border-stone-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-teal-600">
+        </div>
+        <button type="submit" class="bg-teal-800 hover:bg-teal-700 text-white font-semibold rounded px-5 py-2">Submit</button>
+      </form>
+      <!-- /KONTEN -->
+    </main>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="bg-stone-200 text-center text-sm text-stone-600 py-3">
+    &copy; 2026 TokoKu Admin. Dibuat dengan TailwindCSS.
+  </footer>
+
+</body>
+</html>

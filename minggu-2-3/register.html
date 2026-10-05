@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Register - TokoKu Admin</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen flex items-center justify-center bg-stone-100 text-stone-800 p-6">
+
+  <form id="form-register" action="dashboard.html" novalidate
+        class="w-full max-w-md bg-white rounded-lg shadow p-8 space-y-4">
+    <h1 class="text-2xl font-bold">Buat Akun</h1>
+
+    <div>
+      <label for="username" class="block text-sm font-medium mb-1">Username</label>
+      <input id="username" name="username" type="text"
+             class="w-full border border-stone-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-teal-600">
+      <p class="error text-sm text-red-600 mt-1 hidden"></p>
+    </div>
+
+    <div>
+      <label for="password" class="block text-sm font-medium mb-1">Password</label>
+      <input id="password" name="password" type="password"
+             class="w-full border border-stone-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-teal-600">
+      <p class="error text-sm text-red-600 mt-1 hidden"></p>
+    </div>
+
+    <div>
+      <label for="nama" class="block text-sm font-medium mb-1">Nama</label>
+      <input id="nama" name="nama" type="text"
+             class="w-full border border-stone-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-teal-600">
+      <p class="error text-sm text-red-600 mt-1 hidden"></p>
+    </div>
+
+    <div>
+      <label for="tanggal_lahir" class="block text-sm font-medium mb-1">Tanggal Lahir</label>
+      <input id="tanggal_lahir" name="tanggal_lahir" type="date"
+             class="w-full border border-stone-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-teal-600">
+      <p class="error text-sm text-red-600 mt-1 hidden"></p>
+    </div>
+
+    <div>
+      <label for="alamat" class="block text-sm font-medium mb-1">Alamat</label>
+      <textarea id="alamat" name="alamat" rows="3"
+                class="w-full border border-stone-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-teal-600"></textarea>
+      <p class="error text-sm text-red-600 mt-1 hidden"></p>
+    </div>
+
+    <div>
+      <label for="telepon" class="block text-sm font-medium mb-1">Nomor Telepon</label>
+      <input id="telepon" name="telepon" type="tel" placeholder="62812xxxxxxx"
+             class="w-full border border-stone-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-teal-600">
+      <p class="error text-sm text-red-600 mt-1 hidden"></p>
+    </div>
+
+    <button type="submit" class="w-full bg-teal-800 hover:bg-teal-700 text-white font-semibold rounded py-2">Daftar</button>
+    <p class="text-sm text-center text-stone-500">Sudah punya akun? <a href="index.html" class="text-teal-800 underline">Login</a></p>
+  </form>
+
+  <script src="validasi_input.js"></script>
+</body>
+</html>
